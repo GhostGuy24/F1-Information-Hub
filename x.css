@@ -6,65 +6,32 @@ body {
     padding: 0;
 }
 
-/* Header Styling */
 .site-header {
-    background-color: #ffffff; /* Classic F1 Red */
-    text-align: left;
-    color: #fff;
-    padding: 20px 0;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    background-color: #212529; /* Slightly darker background */
 }
 
-.header-container {
-    display: flex;
-    justify-content: space-between; /* Spread out the content */
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
+.navbar-nav .nav-link {
+    color: #e9ecef; /* Soft light color for text */
+    font-weight: 500; /* Slightly bolder text for a cleaner look */
+    text-transform: none; /* Keep the text case as is for a more modern look */
+    font-size: 16px; /* Increase font size for readability */
+    padding: 8px 12px; /* Padding for space around the text */
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
 }
 
-.header-left {
-    display: flex;
-    align-items: center; /* Align logo and title horizontally */
+.navbar-nav .nav-link:hover {
+    color: #f8f9fa; /* Light color for the text on hover */
+    background-color: rgba(255, 255, 255, 0.1); /* Slight background color change */
+    border-radius: 5px; /* Soft rounded corners */
 }
 
-.f1-logo {
-    width: 500%; /* Makes the logo twice as big */
-    height: auto; /* Keeps the aspect ratio intact */
+.navbar-toggler-icon {
+    background-color: #ffffff; /* Change the hamburger icon color for visibility */
 }
 
-.site-title {
-    font-size: 70px;
-    font-weight: bold;
-    text-align: left;
-    color: #ff5733;
-    font-family: 'Impact', sans-serif;
-    font-weight: 700;  /* Bold weight */
-}
-
-.nav-buttons {
-    display: flex;
-    gap: 15px;
-}
-
-.nav-button {
-    color: #fff;
-    background-color: #ff5733;
-    padding: 10px 20px;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-    font-size: 16px;
-    font-weight: bold;
-}
-
-.nav-button:hover {
-    background-color: #626161; /* Slightly lighter red on hover */
-    color: #fff;
-}
-
-ol {
-    padding-left: 20px;
+.navbar-brand img {
+    width: 50px; /* Adjust the logo size */
+    height: auto;
 }
 
 /* Championship Container Styling */
@@ -88,7 +55,7 @@ ol {
     text-align: center;
     font-size: 24px;
     padding: 20px;
-    background-color: #ff5733;
+    background-color: #dc3545;
     color: #fff;
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
@@ -146,7 +113,7 @@ tr:first-child td {
 
 /* Footer Styling */
 .site-footer {
-    background-color: #333; /* Dark background for footer */
+    background-color: #dc3545; /* Dark background for footer */
     color: #fff; /* White text */
     padding: 20px 0; /* Padding for top and bottom */
     text-align: center; /* Center text horizontally */
@@ -179,7 +146,7 @@ tr:first-child td {
 }
 
 .footer-link:hover {
-    color: #ff5733; /* Light red color on hover */
+    color: #dc3545; /* Light red color on hover */
 }
 
 /* Card styling */
@@ -190,7 +157,7 @@ tr:first-child td {
     transition: transform 0.3s ease-in-out;
     cursor: pointer; /* Indicate that the card is clickable */
     overflow: hidden;
-    background-color: #ff5733; /* Ensure the background of the card is visible */
+    background-color: #dc3545; /* Ensure the background of the card is visible */
 }
 
 .card:hover {
@@ -208,7 +175,7 @@ tr:first-child td {
 /* Card body styling */
 .card-body {
     padding: 15px;
-    background-color: #ff5733; /* Ensure the background is consistent with the card */
+    background-color: #dc3545; /* Ensure the background is consistent with the card */
     color: #fff; /* White text */
     font-size: 1.1rem; /* Slightly larger text for better readability */
 }
@@ -289,7 +256,7 @@ tr:first-child td {
     display: none;
     margin-top: 10px;
     padding-top: 10px;
-    border-top: 2px solid #ff5733;
+    border-top: 2px solid #dc3545;
     font-size: 14px;
     color: #333;
     background-color: #fff;

@@ -3,7 +3,7 @@ function setTeamDetails(teamName, teamDetails) {
     const modalTitle = document.querySelector("#teamModal .modal-title");
     const modalBody = document.querySelector("#teamModal .modal-body");
 
-    // Update modal content
+    // Updated modal content for Teams
     if (modalTitle && modalBody) {
         modalTitle.textContent = teamName;
         modalBody.textContent = teamDetails;

@@ -5,28 +5,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Drivers - F1 Information Hub</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="x.css" rel="stylesheet"> <!-- Your custom CSS file -->
+    <link href="x.css" rel="stylesheet">
+    <link rel="icon" type="images/x-icon" href="/media/f1-icon.jpeg">
+
 </head>
 <body>
 
 <!-- Header Section -->
-<header class="site-header">
-    <div class="header-container">
-        <div class="header-left">
-        <a href="index.html">
-            <a href="index.html">
-                <img src="media/f1-icon.jpeg" alt="">
-            </a>
-        </div>
-        <nav class="nav-buttons">
-            <a href="circuits.html" class="nav-button">Circuits</a>
-            <a href="drivers.html" class="nav-button">Drivers</a>
-            <a href="teams.html" class="nav-button">Teams</a>
+ <header class="site-header bg-danger">
+    <nav class="navbar navbar-expand-lg bg-danger">
+            <div class="container-fluid">
+                <nav class="navbar bg-danger ">
+                    <div class="container">
+                      <a class="navbar-brand" href="#">
+                        <img src="media/f1-icon.jpeg" alt="f1" width="30" height="24"> HUB
+                      </a>
+                    </div>
+                  </nav>              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="drivers.html">Drivers</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="circuits.html">Circuits</a>
+                  </li>
+                  
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="teams.html">Teams</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="teams.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      dropdown
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+                </ul>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
         </nav>
-    </div>
-</header>
+     
+    </header>
 
-<!-- Main Content -->
+<!-- Drivers Cards -->
 <div class="container mt-5">
     <h1 class="text-center mb-5 f1-circuit-title">F1 Drivers</h1>
     <div class="row">
@@ -49,7 +84,7 @@
 
         <!-- Driver 2: Lewis Hamilton -->
         <div class="col-md-4 mb-4">
-            <div class="card driver-card" onclick="expandDriverCard(this)">
+            <div class="card driver-card" onclick="setTeamDetails(this)">
                 <img src="media/LW.jpeg" class="card-img-top" alt="Lewis Hamilton">
                 <div class="card-body">
                     <h5 class="card-title">Lewis Hamilton</h5>
@@ -196,10 +231,29 @@
 <!-- Footer Section -->
 <footer class="site-footer">
     <div class="footer-container">
-        <p>&copy; 2024 F1 Information Hub</p>
+        <p class="footer-text">&copy; 2024 F1 Championships | All Rights Reserved</p>
+        <div class="footer-nav">
+            <a href="circuits.html" class="footer-link">Circuits</a>
+            <a href="drivers.html" class="footer-link">Drivers</a>
+            <a href="teams.html" class="footer-link">Teams</a>
+        </div>
     </div>
 </footer>
 
+<div class="modal fade" id="teamModal" tabindex="-1" aria-labelledby="teamModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="teamModalLabel"></h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body"></div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 <script src="main.js"></script>
