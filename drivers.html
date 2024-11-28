@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drivers - F1 Information Hub</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="x.css" rel="stylesheet"> <!-- Your custom CSS file -->
+</head>
+<body>
+
+<!-- Header Section -->
+<header class="site-header">
+    <div class="header-container">
+        <div class="header-left">
+        <a href="index.html">
+            <a href="index.html">
+                <img src="media/f1-icon.jpeg" alt="">
+            </a>
+        </div>
+        <nav class="nav-buttons">
+            <a href="circuits.html" class="nav-button">Circuits</a>
+            <a href="drivers.html" class="nav-button">Drivers</a>
+            <a href="teams.html" class="nav-button">Teams</a>
+        </nav>
+    </div>
+</header>
+
+<!-- Main Content -->
+<div class="container mt-5">
+    <h1 class="text-center mb-5 f1-circuit-title">F1 Drivers</h1>
+    <div class="row">
+        <!-- Driver 1: Michael Schumacher -->
+        <div class="col-md-4 mb-4">
+            <div class="card driver-card" onclick="expandDriverCard(this)">
+                <img src="media/ms.jpeg" class="card-img-top" alt="Michael Schumacher">
+                <div class="card-body">
+                    <h5 class="card-title">Michael Schumacher</h5>
+                    <h6 class="card-subtitle mb-2 text-body-secondary">🇩🇪</h6>
+                    <p class="card-text compact-text">Age: 54 | Wins: 91 | Races: 306 | Podiums: 155</p>
+                    <div class="card-details d-none">
+                        <p>Michael Schumacher is widely regarded as one of the greatest Formula 1 drivers in history. He won seven World Championships and achieved 91 race victories during his illustrious career.</p>
+                        <p>Fun Fact: Schumacher had an incredible record of consistency and mental fortitude on the track.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+        <!-- Driver 2: Lewis Hamilton -->
+        <div class="col-md-4 mb-4">
+            <div class="card driver-card" onclick="expandDriverCard(this)">
+                <img src="media/LW.jpeg" class="card-img-top" alt="Lewis Hamilton">
+                <div class="card-body">
+                    <h5 class="card-title">Lewis Hamilton</h5>
+                    <h6 class="card-subtitle mb-2 text-body-secondary">🇬🇧</h6>
+                    <p class="card-text compact-text">Age: 39 | Wins: 103 | Races: 308 | Podiums: 179</p>
+                    <div class="card-details d-none">
+                        <p>Lewis Hamilton is considered one of the most dominant drivers in Formula 1 history. He has seven World Championships and is widely known for his speed and mental toughness.</p>
+                        <p>Fun Fact: Hamilton has been an advocate for diversity in motorsport and is actively involved in various social causes.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Driver 3: Juan Manuel Fangio -->
+        <div class="col-md-4 mb-4">
+            <div class="card driver-card" onclick="expandDriverCard(this)">
+                <img src="media/jmf.jpeg" class="card-img-top" alt="Juan Manuel Fangio">
+                <div class="card-body">
+                    <h5 class="card-title">Juan Manuel Fangio</h5>
+                    <h6 class="card-subtitle mb-2 text-body-secondary">🇦🇷</h6>
+                    <p class="card-text compact-text">Age: 84 | Wins: 24 | Races: 52 | Podiums: 35</p>
+                    <div class="card-details d-none">
+                        <p>Juan Manuel Fangio was an Argentine racing driver who dominated Formula 1 in the 1950s, winning five World Championships, a record that stood for nearly 50 years.</p>
+                        <p>Fun Fact: Fangio was known for his calm and calculated driving style, often winning races with a strategic approach rather than raw speed.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+        <!-- Driver 4: Max Verstappen -->
+        <div class="col-md-4 mb-4">
+            <div class="card driver-card" onclick="expandDriverCard(this)">
+                <img src="media/download.jpeg" class="card-img-top" alt="Max Verstappen">
+                <div class="card-body">
+                    <h5 class="card-title">Max Verstappen</h5>
+                    <h6 class="card-subtitle mb-2 text-body-secondary">🇳🇱</h6>
+                    <p class="card-text compact-text">Age: 27 | Wins: 51 | Races: 162 | Podiums: 87</p>
+                    <div class="card-details d-none">
+                        <p>Max Verstappen is known for his aggressive driving and incredible skill behind the wheel. He became the youngest driver in F1 history to win a race at just 18 years old.</p>
+                        <p>Fun Fact: Verstappen is known for his intense rivalry with other drivers and his ability to extract performance from the car in tough situations.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Driver 5: Sebastian Vettel -->
+        <div class="col-md-4 mb-4">
+            <div class="card driver-card" onclick="expandDriverCard(this)">
+                <img src="media/seb.jpeg" class="card-img-top" alt="Sebastian Vettel">
+                <div class="card-body">
+                    <h5 class="card-title">Sebastian Vettel</h5>
+                    <h6 class="card-subtitle mb-2 text-body-secondary">🇩🇪</h6>
+                    <p class="card-text compact-text">Age: 37 | Wins: 53 | Races: 299 | Podiums: 122</p>
+                    <div class="card-details d-none">
+                        <p>Sebastian Vettel is a four-time World Champion known for his dominance during the early 2010s with Red Bull Racing. He is recognized for his focus and precision on track.</p>
+                        <p>Fun Fact: Vettel is a passionate environmental advocate and often promotes sustainability in his personal life and career.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+        <!-- Driver 6: Alain Prost -->
+        <div class="col-md-4 mb-4">
+            <div class="card driver-card" onclick="expandDriverCard(this)">
+                <img src="media/AP.jpeg" class="card-img-top" alt="Alain Prost">
+                <div class="card-body">
+                    <h5 class="card-title">Alain Prost</h5>
+                    <h6 class="card-subtitle mb-2 text-body-secondary">🇫🇷</h6>
+                    <p class="card-text compact-text">Age: 68 | Wins: 51 | Races: 202 | Podiums: 106</p>
+                    <div class="card-details d-none">
+                        <p>Alain Prost is a French racing legend, four-time World Champion, and one of the most intelligent drivers in F1 history. He was known for his tactical approach to racing.</p>
+                        <p>Fun Fact: Prost's rivalry with Ayrton Senna is one of the most iconic in motorsport history.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Driver 7: Ayrton Senna -->
+        <div class="col-md-4 mb-4">
+            <div class="card driver-card" onclick="expandDriverCard(this)">
+                <img src="media/AS.jpeg" class="card-img-top" alt="Ayrton Senna">
+                <div class="card-body">
+                    <h5 class="card-title">Ayrton Senna</h5>
+                    <h6 class="card-subtitle mb-2 text-body-secondary">🇧🇷</h6>
+                    <p class="card-text compact-text">Age: 34 | Wins: 41 | Races: 161 | Podiums: 80</p>
+                    <div class="card-details d-none">
+                        <p>Ayrton Senna is remembered as one of the most talented and charismatic drivers in F1. His aggressive driving style and relentless pursuit of victory made him a fan favorite.</p>
+                        <p>Fun Fact: Senna's tragic death during the 1994 San Marino Grand Prix has deeply impacted the F1 community and led to significant safety reforms in the sport.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Driver 8: Nelson Piquet -->
+        <div class="col-md-4 mb-4">
+            <div class="card driver-card" onclick="expandDriverCard(this)">
+                <img src="media/ns.jpeg" class="card-img-top" alt="Nelson Piquet">
+                <div class="card-body">
+                    <h5 class="card-title">Nelson Piquet</h5>
+                    <h6 class="card-subtitle mb-2 text-body-secondary">🇧🇷</h6>
+                    <p class="card-text compact-text">Age: 71 | Wins: 23 | Races: 208 | Podiums: 60</p>
+                    <div class="card-details d-none">
+                        <p>Nelson Piquet is a Brazilian racing legend, three-time World Champion. He was known for his technical expertise and consistency in a variety of conditions.</p>
+                        <p>Fun Fact: Piquet is regarded as one of the most complete drivers of his era, with expertise in both racing strategy and car setup.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Driver 9: Niki Lauda -->
+        <div class="col-md-4 mb-4">
+            <div class="card driver-card" onclick="expandDriverCard(this)">
+                <img src="media/nl.jpeg" class="card-img-top" alt="Niki Lauda">
+                <div class="card-body">
+                    <h5 class="card-title">Niki Lauda</h5>
+                    <h6 class="card-subtitle mb-2 text-body-secondary">🇦🇹</h6>
+                    <p class="card-text compact-text">Age: 70 | Wins: 25 | Races: 171 | Podiums: 54</p>
+                    <div class="card-details d-none">
+                        <p>Niki Lauda was an Austrian F1 driver who survived a life-threatening crash in 1976. He went on to win three World Championships, showcasing an incredible comeback story.</p>
+                        <p>Fun Fact: Lauda's near-fatal crash and subsequent recovery is one of the most inspiring stories in motorsport history.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Driver 10: Jackie Stewart -->
+        <div class="col-md-4 mb-4">
+            <div class="card driver-card" onclick="expandDriverCard(this)">
+                <img src="media/js.jpeg" class="card-img-top" alt="Jackie Stewart">
+                <div class="card-body">
+                    <h5 class="card-title">Jackie Stewart</h5>
+                    <h6 class="card-subtitle mb-2 text-body-secondary">🇬🇧</h6>
+                    <p class="card-text compact-text">Age: 85 | Wins: 27 | Races: 99 | Podiums: 43</p>
+                    <div class="card-details d-none">
+                        <p>Jackie Stewart is a Scottish former racing driver, best known for his three Formula One World Championships and his contributions to improving driver safety.</p>
+                        <p>Fun Fact: Stewart was known for his advocacy of safety measures in the sport, which helped save many lives in the years that followed.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Footer Section -->
+<footer class="site-footer">
+    <div class="footer-container">
+        <p>&copy; 2024 F1 Information Hub</p>
+    </div>
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="main.js"></script>
+
+    
+</body>
+</html>

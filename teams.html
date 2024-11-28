@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teams - F1 Information Hub</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="x.css" rel="stylesheet"> <!-- Your custom CSS file -->
+
+</head>
+<body>
+
+<!-- Header Section -->
+<header class="site-header">
+    <div class="header-container">
+        <div class="header-left">
+            <a href="index.html">
+                <img src="media/f1-icon.jpeg" alt="">
+            </a>
+        </div>
+        <nav class="nav-buttons">
+            <a href="circuits.html" class="nav-button">Circuits</a>
+            <a href="drivers.html" class="nav-button">Drivers</a>
+            <a href="teams.html" class="nav-button">Teams</a>
+        </nav>
+    </div>
+</header>
+
+<!-- Main Content -->
+<div class="container mt-5">
+    <h1 class="text-center mb-5 f1-circuit-title">F1 Teams</h1>
+
+    <div id="teamsAccordion">
+        <!-- Team 1: Ferrari -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingFerrari">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFerrari" aria-expanded="false" aria-controls="collapseFerrari">
+                    <img src="media/ferrari.png" alt="ferrari">
+                </button>
+            </h2>
+            <div id="collapseFerrari" class="accordion-collapse collapse" aria-labelledby="headingFerrari" data-bs-parent="#teamsAccordion">
+                <div class="accordion-body">
+                    <h5 class="text-white">Country: 🇮🇹</h5>
+                    <p class="text-white">Team Principal: Mattia Binotto</p>
+                    <p class="text-white">Founded: 1929</p>
+                    <p class="text-white">World Championships: 16</p>
+                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#teamModal" 
+                            onclick="setTeamDetails('Ferrari', 'Ferrari, founded in 1929, is one of the most successful teams in Formula 1 with 16 Constructors Championships. The team\'s passion for racing and speed has been a staple in the F1 scene for decades.')">
+                        More Details
+                    </button>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Team 2: Williams -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingWilliams">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWilliams" aria-expanded="false" aria-controls="collapseWilliams">
+                    <img src="media/williams.png" alt="">
+                </button>
+            </h2>
+            <div id="collapseWilliams" class="accordion-collapse collapse" aria-labelledby="headingWilliams" data-bs-parent="#teamsAccordion">
+                <div class="accordion-body">
+                    <h5 class="text-white">Country: 🇬🇧</h5>
+                    <p class="text-white">Team Principal: James Vowles</p>
+                    <p class="text-white">Founded: 1977</p>
+                    <p class="text-white">World Championships: 9</p>
+                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#teamModal" onclick="setTeamDetails('Williams', 'Williams, founded in 1977, is a legendary team in F1 with 9 Constructors Championships, and has been a strong force in the sport for decades.')">More Details</button>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Team 3: McLaren -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingMcLaren">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseMcLaren" aria-expanded="false" aria-controls="collapseMcLaren">
+                    <img src="media/Mclareen.jpeg" alt="">
+                </button>
+            </h2>
+            <div id="collapseMcLaren" class="accordion-collapse collapse" aria-labelledby="headingMcLaren" data-bs-parent="#teamsAccordion">
+                <div class="accordion-body">
+                    <h5 class="text-white">Country: 🇬🇧</h5>
+                    <p class="text-white">Team Principal: Andrea Stella</p>
+                    <p class="text-white">Founded: 1963</p>
+                    <p class="text-white">World Championships: 8</p>
+                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#teamModal" onclick="setTeamDetails('McLaren', 'McLaren, established in 1963, has won 8 Constructors Championships and is one of the most iconic teams in F1 history, known for its technical excellence and innovation.')">More Details</button>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Team 4: Mercedes -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingMercedes">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseMercedes" aria-expanded="false" aria-controls="collapseMercedes">
+                    <img src="media/mercedes.jpeg" alt="">
+                </button>
+            </h2>
+            <div id="collapseMercedes" class="accordion-collapse collapse" aria-labelledby="headingMercedes" data-bs-parent="#teamsAccordion">
+                <div class="accordion-body">
+                    <h5 class="text-white">Country: 🇩🇪</h5>
+                    <p class="text-white">Team Principal: Toto Wolff</p>
+                    <p class="text-white">Founded: 1954</p>
+                    <p class="text-white">World Championships: 7</p>
+                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#teamModal" onclick="setTeamDetails('Mercedes', 'Mercedes, founded in 1954, is one of the most successful teams in modern F1 with 7 Constructors Championships, dominating the sport during the hybrid era.')">More Details</button>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Team 5: Red Bull Racing -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingRedBull">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseRedBull" aria-expanded="false" aria-controls="collapseRedBull">
+                    <img src="media/red bull.avif" alt="">
+                </button>
+            </h2>
+            <div id="collapseRedBull" class="accordion-collapse collapse" aria-labelledby="headingRedBull" data-bs-parent="#teamsAccordion">
+                <div class="accordion-body">
+                    <h5 class="text-white">Country: 🇬🇧</h5>
+                    <p class="text-white">Team Principal: Christian Horner</p>
+                    <p class="text-white">Founded: 2005</p>
+                    <p class="text-white">World Championships: 4</p>
+                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#teamModal" onclick="setTeamDetails('Red Bull Racing', 'Red Bull Racing, founded in 2005, quickly rose to the top of F1, winning 4 Constructors Championships. They are known for their innovative approach and dominance in recent years.')">More Details</button>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Team 6: Lotus -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingLotus">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseLotus" aria-expanded="false" aria-controls="collapseLotus">
+                    <img src="media/lotus.png" alt="">
+                </button>
+            </h2>
+            <div id="collapseLotus" class="accordion-collapse collapse" aria-labelledby="headingLotus" data-bs-parent="#teamsAccordion">
+                <div class="accordion-body">
+                    <h5 class="text-white">Country: 🇬🇧</h5>
+                    <p class="text-white">Team Principal: Tony Fernandes</p>
+                    <p class="text-white">Founded: 1958</p>
+                    <p class="text-white">World Championships: 7</p>
+                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#teamModal" onclick="setTeamDetails('Lotus', 'Lotus, founded in 1958, won 7 Constructors Championships. The team was highly influential during the 60s and 70s, with innovations like the rear-engine car and active suspension.')">More Details</button>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Team 7: Brabham -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingBrabham">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseBrabham" aria-expanded="false" aria-controls="collapseBrabham">
+                    <img src="media/bbbbbb.png" alt="">
+                </button>
+            </h2>
+            <div id="collapseBrabham" class="accordion-collapse collapse" aria-labelledby="headingBrabham" data-bs-parent="#teamsAccordion">
+                <div class="accordion-body">
+                    <h5 class="text-white">Country: 🇬🇧</h5>
+                    <p class="text-white">Team Principal: Jack Brabham</p>
+                    <p class="text-white">Founded: 1960</p>
+                    <p class="text-white">World Championships: 4</p>
+                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#teamModal" onclick="setTeamDetails('Brabham', 'Brabham, founded in 1960 by legendary driver Jack Brabham, won 4 Constructors Championships, and was known for its innovative designs in the 60s and 70s.')">More Details</button>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Team 8: Renault -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingRenault">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseRenault" aria-expanded="false" aria-controls="collapseRenault">
+                    <img src="media/alpine.png" alt="">
+                </button>
+            </h2>
+            <div id="collapseRenault" class="accordion-collapse collapse" aria-labelledby="headingRenault" data-bs-parent="#teamsAccordion">
+                <div class="accordion-body">
+                    <h5 class="text-white">Country: 🇫🇷</h5>
+                    <p class="text-white">Team Principal: Cyril Abiteboul</p>
+                    <p class="text-white">Founded: 1977</p>
+                    <p class="text-white">World Championships: 2</p>
+                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#teamModal" onclick="setTeamDetails('Renault', 'Renault, founded in 1977, is a key player in F1, with 2 Constructors Championships and a reputation for being a highly innovative engine supplier.')">More Details</button>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Team 9: Cooper -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingCooper">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCooper" aria-expanded="false" aria-controls="collapseCooper">
+                    <img src="media/cooper.jpeg" alt="">
+                </button>
+            </h2>
+            <div id="collapseCooper" class="accordion-collapse collapse" aria-labelledby="headingCooper" data-bs-parent="#teamsAccordion">
+                <div class="accordion-body">
+                    <h5 class="text-white">Country: 🇬🇧</h5>
+                    <p class="text-white">Team Principal: John Cooper</p>
+                    <p class="text-white">Founded: 1947</p>
+                    <p class="text-white">World Championships: 2</p>
+                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#teamModal" onclick="setTeamDetails('Cooper', 'Cooper, founded in 1947, made history by pioneering the rear-engine car in F1, helping to revolutionize the sport in the early 1960s.')">More Details</button>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Team 10: Benetton -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingBenetton">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseBenetton" aria-expanded="false" aria-controls="collapseBenetton">
+                    <img src="media/benaton.png" alt="">
+                </button>
+            </h2>
+            <div id="collapseBenetton" class="accordion-collapse collapse" aria-labelledby="headingBenetton" data-bs-parent="#teamsAccordion">
+                <div class="accordion-body">
+                    <h5 class="text-white">Country: 🇮🇹</h5>
+                    <p class="text-white">Team Principal: Flavio Briatore</p>
+                    <p class="text-white">Founded: 1986</p>
+                    <p class="text-white">World Championships: 1</p>
+                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#teamModal" onclick="setTeamDetails('Benetton', 'Benetton, founded in 1986, won 1 Constructors Championship, and is best known for its involvement with Michael Schumacher in the mid-90s, leading to several dominant seasons.')">More Details</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+<!-- Footer Section -->
+<footer class="site-footer">
+    <div class="footer-container">
+        <p>&copy; 2024 F1 Information Hub</p>
+    </div>
+</footer>
+
+<!-- Modal Structure -->
+<div class="modal fade" id="teamModal" tabindex="-1" aria-labelledby="teamModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="teamModalLabel"></h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body"></div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+<script src="main.js"></script>
+
+
+</body>
+</html>

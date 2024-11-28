@@ -1,0 +1,376 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #626161; /* Light background for the body */
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styling */
+.site-header {
+    background-color: #ffffff; /* Classic F1 Red */
+    text-align: left;
+    color: #fff;
+    padding: 20px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between; /* Spread out the content */
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.header-left {
+    display: flex;
+    align-items: center; /* Align logo and title horizontally */
+}
+
+.f1-logo {
+    width: 500%; /* Makes the logo twice as big */
+    height: auto; /* Keeps the aspect ratio intact */
+}
+
+.site-title {
+    font-size: 70px;
+    font-weight: bold;
+    text-align: left;
+    color: #ff5733;
+    font-family: 'Impact', sans-serif;
+    font-weight: 700;  /* Bold weight */
+}
+
+.nav-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.nav-button {
+    color: #fff;
+    background-color: #ff5733;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.nav-button:hover {
+    background-color: #626161; /* Slightly lighter red on hover */
+    color: #fff;
+}
+
+ol {
+    padding-left: 20px;
+}
+
+/* Championship Container Styling */
+.championship-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px;
+    flex-wrap: wrap;
+}
+
+.championship-list {
+    width: 100%;
+    max-width: 600px; /* Set max-width for responsiveness */
+    margin-bottom: 40px;
+    background-color: #fff; /* White background for each list */
+    border-radius: 8px; /* Round corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for modern look */
+}
+
+.championship-list h1 {
+    text-align: center;
+    font-size: 24px;
+    padding: 20px;
+    background-color: #ff5733;
+    color: #fff;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    margin: 0;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse; /* Remove borders between cells */
+    font-size: 16px;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    color: #555;
+}
+
+th {
+    background-color: #f4f4f4; /* Light gray background for headers */
+    color: #333;
+}
+
+td {
+    background-color: #fafafa; /* Very light gray background for rows */
+    border-bottom: 1px solid #ddd; /* Subtle border between rows */
+}
+
+tr:nth-child(even) td {
+    background-color: #f9f9f9; /* Slightly darker background for even rows */
+}
+
+tr:hover {
+    background-color: #f1f1f1; /* Light hover effect */
+    cursor: pointer;
+}
+
+tr:first-child td {
+    border-top: none; /* Remove border on first row */
+}
+
+/* DataTable styling adjustments */
+.dataTables_wrapper .dataTables_paginate {
+    display: none; /* Hide pagination controls if you want no pagination */
+}
+
+/* Responsive styling for small screens */
+@media (max-width: 768px) {
+    .championship-container {
+        flex-direction: column;
+        padding: 20px;
+    }
+}
+
+/* Footer Styling */
+.site-footer {
+    background-color: #333; /* Dark background for footer */
+    color: #fff; /* White text */
+    padding: 20px 0; /* Padding for top and bottom */
+    text-align: center; /* Center text horizontally */
+    margin-top: 40px; /* Space between content and footer */
+    position: relative;
+}
+
+.footer-container {
+    max-width: 1200px; /* Max width for the footer content */
+    margin: 0 auto; /* Center the footer content */
+    padding: 0 20px;
+}
+
+.footer-text {
+    font-size: 16px;
+    margin-bottom: 10px; /* Space between text and links */
+}
+
+.footer-nav {
+    display: flex;
+    justify-content: center; /* Center the navigation links */
+    gap: 20px;
+}
+
+.footer-link {
+    color: #fff; /* White color for the links */
+    text-decoration: none; /* Remove underline */
+    font-size: 16px;
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.footer-link:hover {
+    color: #ff5733; /* Light red color on hover */
+}
+
+/* Card styling */
+.card {
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer; /* Indicate that the card is clickable */
+    overflow: hidden;
+    background-color: #ff5733; /* Ensure the background of the card is visible */
+}
+
+.card:hover {
+    transform: scale(1.05); /* Slightly enlarge card when hovered */
+}
+
+/* Card title styling (driver name) */
+.card-title {
+    font-weight: bold;
+    font-size: 1.4rem; /* Larger text size */
+    color: #fff; /* White text */
+    text-align: center;
+}
+
+/* Card body styling */
+.card-body {
+    padding: 15px;
+    background-color: #ff5733; /* Ensure the background is consistent with the card */
+    color: #fff; /* White text */
+    font-size: 1.1rem; /* Slightly larger text for better readability */
+}
+
+/* Card text (driver stats) */
+.card-text {
+    font-size: 1.1rem; /* Larger text */
+    color: #fff; /* White text for readability */
+    text-align: center; /* Center the text */
+}
+
+/* Driver country flag and stats */
+.card-subtitle {
+    font-size: 1.2rem;
+    color: #fff; /* White text */
+    text-align: center; /* Center-align the country flag */
+    margin-bottom: 10px; /* Add space below the flag */
+}
+
+/* Ensure card body text is white and clean */
+.card-body p {
+    margin-bottom: 0; /* Remove unnecessary bottom margin */
+}
+
+/* Hover effect for card */
+.card:hover {
+    transform: scale(1.05); /* Slightly enlarge card when hovered */
+}
+
+.card .card-details.expanded {
+    display: block;
+}
+.driver-card {
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.driver-card:hover {
+    transform: scale(1.03);
+}
+
+.driver-card.expanded {
+    position: relative;
+    z-index: 10;
+    transform: scale(1.5);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-details {
+    margin-top: 10px;
+}
+
+.card-details p {
+    font-size: 0.9rem;
+}
+
+.compact-text {
+    transition: opacity 0.3s ease;
+}
+/* Footer styling adjustments (no change needed here) */
+.site-footer {
+    background-color: #333; /* Dark background for footer */
+    color: #fff; /* White text */
+    padding: 20px 0; /* Padding for top and bottom */
+    text-align: center; /* Center text horizontally */
+    margin-top: 40px; /* Space between content and footer */
+}
+
+/* Add responsive media queries if needed */
+@media (max-width: 768px) {
+    .card {
+        width: 100%; /* Full width for smaller screens */
+    }
+}
+
+/* Expanded Card details styling */
+.card-details {
+    display: none;
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 2px solid #ff5733;
+    font-size: 14px;
+    color: #333;
+    background-color: #fff;
+}
+
+.card.expanded-card {
+    transform: scale(1.1); /* Enlarge card when expanded */
+    z-index: 10; /* Ensure the expanded card is above others */
+}
+
+.card .card-details.expanded {
+    display: block;
+}
+
+/* Footer */
+.site-footer p {
+    margin: 0;
+    color: #fff;
+}
+
+/* Ensure the F1 logo is styled properly */
+.f1-logo {
+    width: 40px; /* Adjust size as needed */
+    height: auto;
+    cursor: pointer; /* Change the cursor to indicate it's clickable */
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease;
+}
+
+/* Hover effect for the F1 logo */
+.f1-logo:hover {
+    transform: scale(1.1); /* Slightly enlarge the logo on hover */
+    opacity: 0.8; /* Make the logo slightly transparent */
+}
+
+.f1-circuit-title {
+    color: rgb(255, 255, 255);              /* Sets the text color to red */
+    font-weight: bold;       /* Makes the text bold */
+    font-size: 50px;         /* Makes the text large */
+    text-align: center;      /* Centers the text horizontally */
+    margin-bottom: 20px;     /* Adds space below the title */
+    font-family: Arial, sans-serif; /* Optional: to ensure a clean and modern font */
+}
+/* Custom styles for modal, if needed */
+.modal-content {
+    background-color: #f4f4f4;
+    color: #333;
+    font-size: 1.1rem;
+}
+.accordion-button img {
+    width: 150px; /* Set a fixed width */
+    height: 150px; /* Set a fixed height */
+    object-fit: cover; /* Ensure the image doesn't get stretched */
+    margin: 0 auto; /* Center the image horizontally */
+}
+
+/* Create a grid layout for the teams */
+#teamsAccordion {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Create responsive columns */
+    gap: 20px; /* Space between each grid item */
+}
+
+/* Optional: Add some padding and center text */
+.accordion-item {
+    text-align: center;
+    padding: 10px;
+}
+
+/* Style for buttons inside each accordion */
+.accordion-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    background-color: transparent;
+    border: none;
+    
+}
+
+.team-info-model {
+    font-size: 1.1rem; /* Larger text */
+    color: #fff; /* White text for readability */
+    text-align: center; /* Center the text */   
+}
