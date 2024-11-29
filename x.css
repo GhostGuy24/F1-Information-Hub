@@ -341,3 +341,8 @@ tr:first-child td {
     color: #fff; /* White text for readability */
     text-align: center; /* Center the text */   
 }
+
+
+.championship-container {
+    margin-top: 1px; /* Adjust the space above the championship tables */
+}

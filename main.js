@@ -3,6 +3,20 @@ function setTeamDetails(teamName, teamDetails) {
     const modalTitle = document.querySelector("#teamModal .modal-title");
     const modalBody = document.querySelector("#teamModal .modal-body");
 
+    modalTitle.innerText = teamName;
+
+    // Check if the team is Williams and render the Easter egg
+    if (teamName === "SIMBA") {
+        modalBody.innerHTML = `
+            <img src="media/EasterEgg.jpeg" alt="Easter Egg" class="img-fluid mb-3" />
+        `;
+    } else {
+        // Render regular details for other teams
+        modalBody.innerHTML = `
+            <p>${teamDetails}</p>
+        `;
+    }
+}
     // Updated modal content for Teams
     if (modalTitle && modalBody) {
         modalTitle.textContent = teamName;
@@ -10,7 +24,7 @@ function setTeamDetails(teamName, teamDetails) {
     } else {
         console.error("Modal elements not found");
     }
-}
+
 // the function above makes the teams.html affects //
 
 
@@ -97,3 +111,6 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 });
+
+
+
